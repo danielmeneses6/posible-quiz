@@ -1,4 +1,7 @@
-
+/* el ejercicio requeria un programa sin interaccion con el usuario donde
+se hicieran presente los 4 algoritmos de ordenamiento y los dos algoritmos de busqueda
+(seleccion,burbuja,insercion,mergesort)(secuencial y binario)
+*/
 package quiz;
 import java.util.Random;
 public class consola {
@@ -10,17 +13,25 @@ public class consola {
         System.out.println("se usara un tamaño de 10-20 datos enteros del 0 al 15 pero en el codigo se tratara como una variable este tamaño");
         System.out.println("esto debido a que no habra interacción consola-usuario, el numero a buscar tambien sera aleatorio dentro de dicho rango");
         System.out.println("todos estos rangos son modificables y no afecta el funcionamiento si se ponen limites distintos");
+        //en este caso se tomo lo que sale en consola y asi se asignan los valores, pero sino se cambian
+        //y funciona normal el programa con diferentes rangos y tamaños
         int aleatorio=0,tamaño=0;
         int min=10,max=20;
         int rango=15;
-       
+       //para asignar un valor aleatorio dentro de un rango se utiliza una librearia
+       //la cual para usarse se necesita crear este objeto:
         Random t=new Random();
+        //aqui se le asigna el valor aleatorio dentro de ese rango maximo y minimo a la variable
         tamaño=t.nextInt(max-min+1)+min;
+        
+        //cree distintos vectores para que cada algoritmo lo ordenara por si mismo ya que con
+        //solo uno, una vez se ordene por un metodo a los otros ese vector ya les llega ordenado
          int [] vector= new int [tamaño];
          int [] vector1= new int [tamaño];
          int [] vector2= new int [tamaño];
          int [] vector3= new int [tamaño];
          int [] vector4= new int [tamaño];
+         //aqui se le asigna un valor x dentro del rango al valor que se va a buscar en los de busqueda
          aleatorio=(int)(Math.random()*rango);
         for(int i=0;i<tamaño;i++)
         {

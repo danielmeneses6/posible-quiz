@@ -1,3 +1,11 @@
+/* el ejercicio requeria un programa sin interaccion con el usuario donde
+se hicieran presente los 4 algoritmos de ordenamiento y los dos algoritmos de busqueda
+(seleccion,burbuja,insercion,mergesort)(secuencial y binario)
+en esta clase es donde se encuentran todos los metodos o los algoritmos
+en el caso de los de ordenamiento se manda como parametro el vector creado en consola
+y en el caso de los de busqueda se mada como parametro el vector y un numero asignado de manera
+aleatoria dentro de un determinado rango el caul es aquel que se buscara en el vector
+*/
 
 package quiz;
 
@@ -156,4 +164,6 @@ public class AlgoritmosByo {
         }
     }
     }
-
+//para entender los diferentes algoritmos es mejor buscar una explicacion en linea,
+//pero basicamente a cada uno le llegan los datos asignados aleatoriamente desde consola
+//y en los metodos ya se hace el procesos necesario para llegar al objetivo de cada uno
